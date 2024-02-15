@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    height: 15vh;
+    width: 80%;
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar>h1 {
+    font-family: 'Allura', cursive;
+    color: #6D6148;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 65px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-menu a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-menu a:hover {
+    color: #6D6148;
+}
+
+.nav-menu .active {
+    color: #6D6148;
+}
+
+.navbar button {
+    padding: 10px 35px;
+    background-color: #6D6148;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+    height: 85vh;
+}
+
+.main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore-page {
+    margin: 0 auto;
+    padding: 60px 0;
+    width: 80%;
+    display: flex;
+    gap: 55px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-page h2 {
+    font-size: 40px;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.explore>img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.explore .content {
+    position: absolute;
+    bottom: -15%;
+    left: 20%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    border-radius: 25px;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-top: 20px solid #6D6148;
+    box-shadow: 2px 2px 20px #000;
+}
+
+.explore .content h4 {
+    color: #6D6148;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #6D6148;
+    color: #fff;
+    padding-top: 6%;
+}
+
+.foot-up {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 75%;
+    margin: 0 auto;
+}
+
+.foot-down {
+    width: 100%;
+    height: 25%;
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-down h5 {
+    font-weight: 400;
+}
+
+.foot1 {
+    width: 25%
+}
+
+.foot1 h2 {
+    margin-bottom: 10px;
+    font-family: 'Allura', cursive;
+    font-size: 35px;
+}
+
+.foot1 p {
+    font-size: 12px;
+    width: 95%;
+    font-weight: 500;
+}
+
+.foot2,
+.foot3,
+.foot4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot2 h5,
+.foot3 h5,
+.foot4 h5 {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 3;
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        height: 7vh;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar>button {
+        display: none;
+    }
+
+    .main {
+        height: 40vh;
+    }
+
+    .explore-page {
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .explore-page h2 {
+        font-size: 6vw;
+    }
+
+    .explore {
+        margin-bottom: 25px;
+    }
+
+    .explore>img {
+        border-radius: 5px;
+    }
+
+    .explore .content {
+        width: 80%;
+        border-radius: 5px;
+        padding: 5px;
+        border-top: none;
+        box-shadow: 2px 2px 20px #000;
+        left: 10%;
+    }
+
+    .explore .content h4 {
+        color: #6D6148;
+        margin-bottom: 5px;
+        font-size: 2vw;
+    }
+
+    .explore .content p {
+        font-size: 1.2vw;
+        width: 90%;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .foot-up {
+        flex-direction: column;
+        width: 90%;
+        height: 85%;
+        padding-bottom: 15px;
+    }
+
+    .foot-down {
+        height: 15%;
+    }
+
+    .foot1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .foot2 h5,
+    .foot3 h5,
+    .foot4 h5 {
+        margin-bottom: 5px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    a {
+        line-height: 1.5;
+        text-align: center;
+    }
+}
