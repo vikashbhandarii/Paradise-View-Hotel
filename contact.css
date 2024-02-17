@@ -57,7 +57,7 @@
 .wall {
     height: 85vh;
     width: 100%;
-    background-image: url(/Assets/herobg.jpg);
+    background-image: url(../Assets/herobg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
